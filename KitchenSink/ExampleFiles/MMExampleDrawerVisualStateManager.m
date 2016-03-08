@@ -31,7 +31,7 @@
     dispatch_once(&onceToken, ^{
         _sharedManager = [[MMExampleDrawerVisualStateManager alloc] init];
         [_sharedManager setLeftDrawerAnimationType:MMDrawerAnimationTypeParallax];
-        [_sharedManager setRightDrawerAnimationType:MMDrawerAnimationTypeParallax];
+        [_sharedManager setRightDrawerAnimationType:MMDrawerAnimationTypeSlide];
     });
     
     return _sharedManager;
